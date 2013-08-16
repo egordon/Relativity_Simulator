@@ -1,0 +1,54 @@
+# Configuration Example and Test for Newton Algorithm
+
+############### Global Definitions ####################
+
+[global] # Key word in brackets
+
+# Required for all simulations
+seconds: 60
+algorithm: newton # Options: special, general, newton
+
+# Newton's Gravitational Constant, required for newton algorithm
+G: .0000000000667912
+
+#### NOTE:
+#### All Units in Pixels/Second for newton
+#### All Units in Pixels/Frame for special and general
+
+############### Object Definitions ################
+
+[0] # Name of object in brackets
+
+# Object Initial Conditions
+position: (300.0, 0.0, -1000.0)
+velocity: (0.0, -10.0, 10.0)
+
+# Size in Pixels
+size: 50.0
+
+# Mass (kg with default constant)
+mass: 20000000000000.0
+
+# Normalized RGB Value (from 0.0 to 1.0)
+color: (0.0f, 1.0f, 0.0f)
+
+[1]
+position: (-300.0, 0.0, -1000.0)
+velocity: (0.0f, 10.0, -10.0)
+size: 50.0
+mass: 20000000000000.0
+color: (1.0, 0.0, 0.0)
+
+[2]
+position: (0.0, 3000.0, -1000.0)
+velocity: (0.0f, -3.0, -2.0)
+size: 50.0
+mass: 100000000000000.0
+color: (1.0, 1.0, 0.0)
+
+[3]
+position: (0.0, 0.0, -1000.0)
+velocity: (0.0f, 0.0, 0.0)
+size: 50.0
+mass: 1000000000000000.0
+color: (0.0, 1.0, 1.0)
